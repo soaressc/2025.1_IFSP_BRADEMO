@@ -6,7 +6,7 @@ Repositório para o curso de Desenvolvimento para dispositivos móveis do primei
 - Trabalhar com os recursos oferecidos por um framework pard desenvolvimento de aplicativos em dispositivos móveis;
 - Desenvolver aplicativos, instalá-los e testá-los.
 
-###Conteúdo do curso
+*Conteúdo do curso*
 - Introdução ao desenvolvimento para dispositivos móveis
 - Introdução à Linguagem Dart
 - Introdução ao Flutter
