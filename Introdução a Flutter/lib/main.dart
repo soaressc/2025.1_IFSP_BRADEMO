@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'Exercicio1.dart';  // Importando a página Exercicio1
+import 'Exercicio2.dart';  // Importando a página Exercicio2
 
 void main() => runApp(MyApp());
 
@@ -6,33 +8,39 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          shadowColor: Colors.black,
-          elevation: 10,
-          title: Text('Flutter is Fun!', style: TextStyle(color: Colors.white)),
-        ),
-        body: Stack(
+      initialRoute: '/', // Define a rota inicial
+      routes: {
+        '/': (context) => MainPage(),
+        '/exercicio1': (context) => Exercicio1(),
+        '/exercicio2': (context) => Exercicio2(),
+      },
+    );
+  }
+}
+
+class MainPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Main Page'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              width: double.infinity,
-              height: double.infinity,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Colors.white, Colors.black12],
-                ),
-              ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/exercicio1'); // Navegar para Exercicio1
+              },
+              child: Text('Ir para Exercicio 1'),
             ),
-            Container(
-              width: 120,
-              height: 120,
-              padding: EdgeInsets.all(10.0),
-              margin: EdgeInsets.all(100.0),
-              color: Colors.red,
-              child: Text('Hi Mom 🐣'),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/exercicio2'); // Navegar para Exercicio2
+              },
+              child: Text('Ir para Exercicio 2'),
             ),
           ],
         ),
