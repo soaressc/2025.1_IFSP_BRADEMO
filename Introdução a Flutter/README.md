@@ -1,16 +1,14 @@
-# myapp
+##Aula 2 da disciplina de (BRADEMO) - DESENVOLVIMENTO PARA DISPOSITIVO MÓVEL
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Conteúdo
+- Introdução ao Flutter
+- Criando um projeto
+- Definição de Widget
+- Hello World em Flutter
+- Build Context
+- Widgets
+- Layout
+- Navegação
+- Input
+- Dialogs, Popups e Messages
+- Exercícios
